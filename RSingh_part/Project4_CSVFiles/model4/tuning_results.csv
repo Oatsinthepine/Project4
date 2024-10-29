@@ -1,0 +1,15 @@
+Trial 0 completed
+  Hyperparameters: {'learning_rate': 0.0001}
+  Final accuracy: 0.7815331220626831
+  Final validation accuracy: 0.596446692943573
+  Final validation loss: 1.249576449394226
+Trial 1 completed
+  Hyperparameters: {'learning_rate': 0.01}
+  Final accuracy: 0.4404181241989136
+  Final validation accuracy: 0.4111675024032593
+  Final validation loss: 1.454289197921753
+Trial 2 completed
+  Hyperparameters: {'learning_rate': 0.001}
+  Final accuracy: 0.6585366129875183
+  Final validation accuracy: 0.510152280330658
+  Final validation loss: 1.185877799987793

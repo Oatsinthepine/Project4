@@ -1,0 +1,41 @@
+Filename,True Label,Predicted Label,Probability
+gg (156).jpg,glioma_tumor,glioma_tumor,0.3420864939689636
+gg (170).jpg,glioma_tumor,pituitary_tumor,0.30955129861831665
+gg (328).jpg,glioma_tumor,glioma_tumor,0.333892285823822
+gg (360).jpg,glioma_tumor,pituitary_tumor,0.31340038776397705
+gg (468).jpg,glioma_tumor,glioma_tumor,0.41253215074539185
+gg (609).jpg,glioma_tumor,glioma_tumor,0.4702375829219818
+gg (65).jpg,glioma_tumor,pituitary_tumor,0.33660823106765747
+gg (703).jpg,glioma_tumor,glioma_tumor,0.45385369658470154
+gg (747).jpg,glioma_tumor,glioma_tumor,0.4479528069496155
+gg (82).jpg,glioma_tumor,no_tumor,0.32513657212257385
+m1(138).jpg,meningioma_tumor,no_tumor,0.4935630261898041
+m1(34).jpg,meningioma_tumor,glioma_tumor,0.411693274974823
+m1(80).jpg,meningioma_tumor,glioma_tumor,0.4480714797973633
+m2 (11).jpg,meningioma_tumor,glioma_tumor,0.38953810930252075
+m2 (119).jpg,meningioma_tumor,glioma_tumor,0.3986402451992035
+m2 (172).jpg,meningioma_tumor,glioma_tumor,0.3738096356391907
+m3 (139).jpg,meningioma_tumor,no_tumor,0.6538096070289612
+m3 (26).jpg,meningioma_tumor,glioma_tumor,0.32006916403770447
+m3 (76).jpg,meningioma_tumor,pituitary_tumor,0.30494505167007446
+m3 (80).jpg,meningioma_tumor,pituitary_tumor,0.31641364097595215
+image (21).jpg,no_tumor,no_tumor,0.5353931784629822
+image (48).jpg,no_tumor,glioma_tumor,0.3372615575790405
+image (63).jpg,no_tumor,no_tumor,0.4983954131603241
+image(179).jpg,no_tumor,no_tumor,0.5679330229759216
+image(289).jpg,no_tumor,no_tumor,0.5928687453269958
+image(301).jpg,no_tumor,no_tumor,0.7799715399742126
+image(309).jpg,no_tumor,no_tumor,0.699968159198761
+image(40).jpg,no_tumor,no_tumor,0.4382282495498657
+image(58).jpg,no_tumor,no_tumor,0.607168972492218
+image(6).jpg,no_tumor,glioma_tumor,0.34194326400756836
+p (258).jpg,pituitary_tumor,no_tumor,0.5368323922157288
+p (270).jpg,pituitary_tumor,no_tumor,0.34919387102127075
+p (301).jpg,pituitary_tumor,no_tumor,0.4429231286048889
+p (337).jpg,pituitary_tumor,no_tumor,0.4134058654308319
+p (58).jpg,pituitary_tumor,no_tumor,0.4214160144329071
+p (619).jpg,pituitary_tumor,pituitary_tumor,0.3419441282749176
+p (701).jpg,pituitary_tumor,pituitary_tumor,0.3083421587944031
+p (801).jpg,pituitary_tumor,pituitary_tumor,0.3288932144641876
+p (806).jpg,pituitary_tumor,pituitary_tumor,0.3450768291950226
+p (819).jpg,pituitary_tumor,pituitary_tumor,0.3379781246185303
