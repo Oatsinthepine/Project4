@@ -1,27 +1,58 @@
-# Project4
+# Project4 Group 2
 
-This repo is for project 4
+## Topic (Health): Brain Tumor classification and detection using deep-learning models
 
-## Topic (Health): Brain Tumor Detection using tensorflow CNN
+This project is aiming for finding the best performing model to classifiy different types of brain tumors by using different deep-learning models. Also the best perfroming model will be used to be deployed on Flask server (localhost) for users to test by uploading the image files, and model will returns per predictions
 
-This project is aiming for constructing a deep-neural network model using CNN to detect brain tumor. The data source is from Kaggle website `Brain Tumor Classification MRI`. 
+Team members:
 
-The approach for the project are divided in the steps below:
+- Ziyue Zhou 
+    * Group Leader: Responsible for cnn model building, training & optimisation, Flask app build, making slide
 
-* Download the source image data from the kaggle url. Perfrom train/test data resize due to large original data size. Considering the time limitation this project will limit the number of data used for training the model.
+- Kenneth Le
+    * Contributor: Responsible for Xception model training & optimisation, assist Flask app build, making slide
 
-* Model building and training. Which include hyperparameter tunning and model saving in h5 format.
+- Singh Rakhi
+    * Contributor: Responsible for ResNet50 model training & optimisation, model history plotting for the whole group, making slide
 
-* Hosting trained model using Flask and construct a simple user interface that enable users to upload random brain MRI picture, then the model will predict and give users some prediction based on the image provided.
+- Huang Yuqi
+    * Contributor: Responsible for U-NET model (classifcation & segementation) training & optimisation, making slide
 
-## New knowledege required for this project:
+- Eric Tran
+    * Contributor: Testing deep-learning models in different method, making slides
 
-First we need to learn CNN and it's structure. Also Keras provide some pre-training model specifically for image classification. e.g: Xception,SVC, HOG, VGG16, VGG19 etc. 
+The data source is from Kaggle website `Brain Tumor Classification MRI`. 
 
-Then when tunning, consider Keras-tuner. Save the history and all the hyperparameters, convert the training loss, accuracy etc into a pd.Dataframe for comparison.
+## Approach for the project
+
+The approach for the project are listed in the steps below:
+
+* Download the source image data from the kaggle url. Perfroming data preprocessing (which include data loading, resizing, rescaling, normalising, augumenting) for the train/test/validate splited data subset.
+
+* Deep-learning model building and training from the preprocessed training data. Testing and evaluating the model performance against the testing dataset. 
+
+* Next is model optimisation, start from simple approach including increase more epochs, adjust learning rate, add schedular, checkpoint & callbacks. Then re-evaluate performance. Then try advanced optimisation methods like Keras-tuner and hyperparameter tunning. Saving the best performing model in h5 format.
+
+* Hosting the best performing model using Flask, and construct a simple user interface that enable users to upload sample brain MRI image to test by themselves, the model will predict and give users predictions based on the image provided.
+
+## Instructions for using the project
+
+To see each model's training & optimising details, go to the folder named per group member. it contains all source files and scripts for per model training.
+To test the best performing model and experience the prediction using webpage interface. Please use git pull / or download the flask_apps folder to your local. Then, please run the app.py file via `flask run` to start the server. Then follow the instruction given in the script to access the predict.html webpage to uplaod images and see the test prediction.
 
 
 ## Data Source:
 
 Bhuvaji, S. Kadam, A. Bhumkar, P. Dedge, D. Chakrabarty, N. Kanchan, S. (2020). Brain Tumor Classification (MRI) [Data set]. Kaggle. <https://doi.org/10.34740/KAGGLE/DSV/1183165>
+
+## References
+
+Deploy Keras Neural Network to Flask Web Service, deeplizard, <https://www.youtube.com/watch?v=SI1hVGvbbZ4&list=PLZbbT5o_s2xr34kj-vyrIXzvUJsG3z5S_>
+
+Create CNN Model and Optimize using Keras Tuner, Krish Naik, <https://www.youtube.com/watch?v=OzLAdpqm35E&t=639s>
+
+What are Callbacks, Checkpoints and Early Stopping in deep learning (Keras and TensorFlow), DigitalSreeni, <https://www.youtube.com/watch?v=wkwtIeq9Ljo>
+
+
+
 
