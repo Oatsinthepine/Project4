@@ -13,7 +13,7 @@ import tensorflow as tf
 from tensorflow import keras
 from keras import backend as K
 from keras.models import load_model
-from keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.preprocessing.image import ImageDataGenerator # remove tensorflow from here if not needed.
 from keras.preprocessing.image import img_to_array
 
 
@@ -66,14 +66,14 @@ def predict(): # here is the predict function for user
     # As model.predict() returns 2D np.array which first dim contains batch_size info. we don't need this.
     predicted_probabilities = prediction[0]
 
-    # create a dictionary to holf all returned classes probabilities.
+    # create a dictionary to hold all returned classes probabilities.
     # here the index co-respond to the classes.
     response = {
         'Prediction': {
-            "glioma_tumor": round(float(predicted_probabilities[0]), 4),
-            "meningioma_tumor": round(float(predicted_probabilities[1]), 4),
-            "no_tumor": round(float(predicted_probabilities[2]), 4),
-            #"pituitary_tumor": float(predicted_probabilities[3]) # U-Net model did not trained on this class, so comment it out
+            "glioma_tumor": f"{round(float(predicted_probabilities[0]) * 100, 2)}%",
+            "meningioma_tumor": f"{round(float(predicted_probabilities[1]) * 100, 2)}%",
+            "no_tumor": f"{round(float(predicted_probabilities[2]) * 100, 2)}%",
+            # "pituitary_tumor": f"{round(float(predicted_probabilities[3]) * 100,2)}%" # U-Net model did not trained on this class, so comment it out
         }
     }
 
