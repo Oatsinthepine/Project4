@@ -2,7 +2,7 @@
 
 ## Topic (Health): Brain Tumor classification and detection using deep-learning models
 
-This project is aiming for finding the best performing model to classifiy different types of brain tumors by using different deep-learning models. Also the best perfroming model will be used to be deployed on Flask server (localhost) for users to test by uploading the image files, and model will returns per predictions
+This project is aiming for finding the best performing model to classifiy different types of brain tumors by using different deep-learning models. Also the best perfroming model will be used to be deployed on Flask server (localhost) for users to test by uploading the image files, and model will returns per predictions in percentage.
 
 Team members:
 
@@ -15,11 +15,11 @@ Team members:
 - Singh Rakhi
     * Contributor: Responsible for ResNet50 model training & optimisation, model history plotting for the whole group, making slide
 
-- Huang Yuqi
+- Yuqi Huang
     * Contributor: Responsible for U-NET model (classifcation & segementation) training & optimisation, making slide
 
 - Eric Tran
-    * Contributor: Testing deep-learning models in different method, making slides
+    * Contributor: Testing deep-learning models and implemented flask_app in different method, making slides
 
 The data source is from Kaggle website `Brain Tumor Classification MRI`. 
 
@@ -37,8 +37,13 @@ The approach for the project are listed in the steps below:
 
 ## Instructions for using the project
 
-To see each model's training & optimising details, go to the folder named per group member. it contains all source files and scripts for per model training.
+To see each model's training & optimising details, go to the folder named per group member in the `main-branch`. it contains all source files and scripts for per model training.
+Please note that all final works are cleaned and packed in the `main-branch`.
 To test the best performing model and experience the prediction using webpage interface. Please use git pull / or download the flask_apps folder to your local. Then, please run the app.py file via `flask run` to start the server. Then follow the instruction given in the script to access the predict.html webpage to uplaod images and see the test prediction.
+
+## Data privacy & ethical considerations
+
+The original source data did not contains any personal identifiable information (PII). Also, the dataset has licence MIT. Which this project only use the data for educational and practical purpose only.
 
 
 ## Data Source:
